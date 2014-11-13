@@ -44,8 +44,3 @@ table:
       - c
   actions:
     - Edit
-modal:
-  title: Hello world
-  actions:
-    primary:
-      - Save

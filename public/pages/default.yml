@@ -46,17 +46,33 @@ table:
     - Grade
   rows:
     - 
-      - 1
-      - 2
-      - 3
+      - Viirpuu, Silja
+      - Tummar, Kalle
+      - Kask, Kerli
     - 
-      - a
-      - b
-      - c
+      - Lähetusel
+      - Tööl
+      - Tööl
   actions:
     - Edit
 modal:
   title: Hello world
-  actions:
+  table: 
+    headers:
+      - Name
+      - Group
+      - Grade
+    rows:
+      - 
+        - Viirpuu, Silja
+        - Lähetusel
+        - 10 EKAP
+      - 
+        - Rohumaa, Janno
+        - Tööl
+        - 5 EKAP
+    actions:
+      - Edit
+  actions_bottom:
     primary:
       - Save

@@ -15,7 +15,7 @@ var tplKeys = [
     'main',
     'filters',
     'actions_top',
-    'actions_bottom',
+    'actions',
     'table',
     'modal',
     'exports',
@@ -54,16 +54,20 @@ $.get('./pages/' + page + '.yml', function(data) {
         filters: tpl.filters({data: data}),
         exports: tpl.exports({data: data}),
         config: tpl.config({data: data}),
-        actions_bottom: tpl.actions_bottom({data: data}),
-        actions_top: tpl.actions_top({data: data}),
+        actions_bottom: tpl.actions({actions: data.actions_bottom}),
+        actions_top: tpl.actions({actions: data.actions_top}),
         table: tpl.table({
-          data: data,
-          table_actions: tpl.table_actions({data: data})
+          table: data.table,
+          table_actions: tpl.table_actions({table_actions: data.table.actions})
         }),
       }),
       modal: tpl.modal({
         data: data,
-        actions_bottom: tpl.actions_bottom({data: data})
+        table: tpl.table({
+          table: data.modal.table,
+          table_actions: tpl.table_actions({table_actions: data.modal.table.actions})
+        }),
+        actions_bottom: tpl.actions({actions: data.modal.actions_bottom})
       })
 
     }))
@@ -78,6 +82,8 @@ $.get('./pages/' + page + '.yml', function(data) {
        e.preventDefault()
 
     })
+
+
 })
 
 
