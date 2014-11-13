@@ -28,3 +28,7 @@ body {
   left: 100px;
 }​
 
+.exports, .config {
+  margin-top: 20px;
+  display: inline-block;
+}

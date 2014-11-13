@@ -29,7 +29,7 @@ filters:
     - Jäta filter meelde
     - Puhasta filter
 actions_top:
-  secondary:
+  primary:
     - Add
 actions_bottom:
   primary:

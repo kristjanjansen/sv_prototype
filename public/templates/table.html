@@ -1,9 +1,10 @@
+{{#if table.rows}}
 <table class="table table-hover table-condensed table-responsive">
   <thead>
     {{#each table.headers}}
     <th>{{this}}</th>
     {{/each}}
-    <th>ccc</th>
+    <th></th>
   </thead>
   <tbody>
     {{#each table.rows}}
@@ -16,3 +17,4 @@
     {{/each}}
   </tbody>
 </table>
+{{/if}}

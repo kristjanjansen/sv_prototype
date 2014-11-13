@@ -22,6 +22,7 @@ var tplKeys = [
     'alert',
     'table_actions',
     'config',
+    'form'
 ]
 
 var tpl = {}
@@ -63,6 +64,7 @@ $.get('./pages/' + page + '.yml', function(data) {
       }),
       modal: tpl.modal({
         data: data,
+        form: tpl.form({form: data.modal.form}),
         table: tpl.table({
           table: data.modal.table,
           table_actions: tpl.table_actions({table_actions: data.modal.table.actions})
@@ -76,7 +78,9 @@ $.get('./pages/' + page + '.yml', function(data) {
 
     $("table").tablesorter();
 
-    $('.table-actions .btn, .modal .btn').on('click', function(e) {
+       $('.modal').modal('toggle')
+
+    $('.table-actions .btn, .modal .btn, .btn-primary').on('click', function(e) {
 
        $('.modal').modal('toggle')
        e.preventDefault()
