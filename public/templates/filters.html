@@ -1,0 +1,35 @@
+<form class="form-inline">
+
+<div class="btn-group" data-toggle="buttons">
+{{#each data.filters.radios}}
+  <label class="btn btn-default btn-sm {{#if @first}}active{{/if}}">
+    <input type="radio" name="options" id="option1" autocomplete="off" {{#if @first}}checked{{/if}}> {{this}}
+  </label>
+{{/each}}
+</div>
+
+{{#each data.filters.select}}
+<select name="" id="input" class="form-control input-sm">
+  {{#each this}}
+  <option value="">{{this}}</option>
+  {{/each}}
+</select>
+{{/each}}
+{{#each data.filters.text}}
+  <div class="form-group">
+    <input type="text" class="form-control input-sm" id="" placeholder="{{.}}">
+  </div>
+{{/each}}
+<div class="btn-group">
+  <button type="button" class="btn btn-default btn-sm">Filtreeri</button>
+  <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+      <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Laiendatud filter...</a></li>
+    <li><a href="#">Jäta filter meelde</a></li>
+    <li class="divider"></li>
+    <li><a href="#"><span class="text-danger">Puhasta filter</span></a></li>
+  </ul>
+</div>
+</form>
