@@ -1,6 +1,11 @@
-header:
+navbar:
   title: Kuressaare Ametikool
   user: Janno Kohver
+  menu:
+    - Õpilase vaade
+    - Õpetaja vaade
+    - Seadistused
+    - Logi välja
 config: true
 help: true
 title: Päevik
@@ -12,17 +17,6 @@ menu:
   - Kasutaja
   - Seadistused
   - Välju
-filters:
-  radios:
-    - Minu tunnid
-    - Kõik
-  select:
-    -
-      - Multimeedia kujundajad
-      - Teabegraafikud
-  text:
-    - First
-    - Second
 actions_top:
   secondary:
     - Add

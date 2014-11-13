@@ -1,3 +1,5 @@
+{{#if data.filters}}
+
 <form class="form-inline">
 
 <div class="btn-group" data-toggle="buttons">
@@ -21,15 +23,16 @@
   </div>
 {{/each}}
 <div class="btn-group">
-  <button type="button" class="btn btn-default btn-sm">Filtreeri</button>
+  <button type="button" class="btn btn-default btn-sm">{{data.filters.title}}</button>
   <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
-      <span class="caret"></span>
+    <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
-    <li><a href="#">Laiendatud filter...</a></li>
-    <li><a href="#">Jäta filter meelde</a></li>
-    <li class="divider"></li>
-    <li><a href="#"><span class="text-danger">Puhasta filter</span></a></li>
+  {{#each data.filters.menu}}
+    <li><a href="">{{ this }}</a></li>
+  {{/each}}
   </ul>
 </div>
 </form>
+
+{{/if}}

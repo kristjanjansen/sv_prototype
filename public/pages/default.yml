@@ -1,4 +1,4 @@
-header:
+navbar:
   title: Kuressaare Ametikool
   user: Mati Mäetalu
 config: true
@@ -23,6 +23,11 @@ filters:
   text:
     - First
     - Second
+  title: Filtreeri
+  menu:
+    - Laiendatud filter...
+    - Jäta filter meelde
+    - Puhasta filter
 actions_top:
   secondary:
     - Add
