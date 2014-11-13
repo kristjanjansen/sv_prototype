@@ -13,6 +13,7 @@
     "tablesorter": "~2.18.1"
   },
   "devDependencies": {
-    "less": "~2.0.0"
+    "less": "~2.0.0",
+    "node-sass": "~1.2.2"
   }
 }
