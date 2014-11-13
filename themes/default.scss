@@ -1,0 +1,23 @@
+
+$font-size-base: 13px;
+$icon-font-path: "../vendor/bootstrap/fonts/";
+
+$padding-base-vertical:          5px;
+$padding-base-horizontal:        10px;
+$padding-small-vertical:         4px;
+$padding-small-horizontal:       8px;
+$padding-xs-vertical:            0px;
+$padding-xs-horizontal:          3px;
+
+$line-height-large:              1.2;
+$line-height-small:              1.4;
+
+$navbar-inverse-color:           lighten($brand-primary, 70%) !default;
+$navbar-inverse-link-color:      $navbar-inverse-color;
+$navbar-inverse-bg:              darken($brand-primary, 10%) !default;
+
+$border-radius-base:        2px !default;
+$border-radius-large:       3px !default;
+$border-radius-small:       2px !default;
+
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";

@@ -1,0 +1,57 @@
+header:
+  title: Kuressaare Ametikool
+  user: Janno Kohver
+config: true
+help: true
+title: Päevik
+alert: It's okay!
+exports:
+  - PDF
+  - Excel
+menu:
+  - Kasutaja
+  - Seadistused
+  - Välju
+filters:
+  radios:
+    - Minu tunnid
+    - Kõik
+  select:
+    -
+      - Multimeedia kujundajad
+      - Teabegraafikud
+  text:
+    - First
+    - Second
+actions_top:
+  secondary:
+    - Add
+actions_bottom:
+  primary:
+    - Save
+  secondary:
+    - Share
+    - Assign
+  danger:
+    - Delete
+table:
+  headers:
+    - Name
+    - Group
+    - Grade
+  rows:
+    - 
+      - 1
+      - 2
+      - 3
+    - 
+      - a
+      - b
+      - c
+  actions:
+    - Edit
+modal:
+  title: Hello world
+  actions:
+    primary:
+      - Save
