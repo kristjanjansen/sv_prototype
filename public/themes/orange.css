@@ -1882,8 +1882,8 @@ table {
   background-color: transparent; }
 
 caption {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: #777777;
   text-align: left; }
 
@@ -1895,7 +1895,7 @@ th {
   max-width: 100%;
   margin-bottom: 18px; }
   .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
-    padding: 8px;
+    padding: 5px;
     line-height: 1.42857;
     vertical-align: top;
     border-top: 1px solid #ddd; }
@@ -1910,7 +1910,7 @@ th {
     background-color: #fff; }
 
 .table-condensed > thead > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > tfoot > tr > td {
-  padding: 5px; }
+  padding: 3px; }
 
 .table-bordered {
   border: 1px solid #ddd; }
@@ -3643,7 +3643,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   border-color: #d35400; }
 
 .alert {
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 18px;
   border: 1px solid transparent;
   border-radius: 2px; }
@@ -3658,7 +3658,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     margin-top: 5px; }
 
 .alert-dismissable, .alert-dismissible {
-  padding-right: 35px; }
+  padding-right: 30px; }
   .alert-dismissable .close, .alert-dismissible .close {
     position: relative;
     top: -2px;
