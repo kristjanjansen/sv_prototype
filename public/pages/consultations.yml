@@ -25,11 +25,14 @@ sidebar:
         url: ?page=consultations&theme=green
       - label: Tumehall
         url: ?page=consultations&theme=gray
-config:
-help: true
-alert: 
+tabs:
+  - Olla
+alert: false
 exports:
   - PDF
+  - Excel
+help: true
+config: false
 filters:
   fields:
     - type: select

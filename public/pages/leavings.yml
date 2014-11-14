@@ -27,10 +27,10 @@ sidebar:
         url: ?page=leavings&theme=green
       - label: Tumehall
         url: ?page=leavings&theme=gray
-config:
-help:
-alert: 
+alert: false
 exports:
+help: false
+config: false
 filters:
   fields:
     - type: select

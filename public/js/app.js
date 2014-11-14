@@ -13,6 +13,7 @@ var tplKeys = [
     'navbar',
     'sidebar',
     'main',
+    'tabs',
     'alert',
     'filters',
     'exports',
@@ -50,6 +51,7 @@ $.get('./pages/' + page + '.yml', function(data) {
       sidebar: tpl.sidebar({data: data}),
       main: tpl.main({
         data: data,
+        tabs: tpl.tabs({data: data}),
         alert: tpl.alert({data: data}),
         filters: tpl.filters({data: data}),
         exports: tpl.exports({data: data}),
