@@ -11,10 +11,15 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> {{data.navbar.user}} <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> {{data.navbar.user.name}} <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                {{#each data.navbar.menu}}
-                <li><a href="">{{ this }}</a></li>
+                {{#each data.navbar.user.menu}}
+                  {{#compare this '!=' '--'}}
+                  <li><a href="">{{ this }}</a></li>
+                  {{/compare}}
+                  {{#compare this '--'}}
+                  <li class="divider"></li>
+                  {{/compare}}
                 {{/each}}
               </ul>
             </li>
