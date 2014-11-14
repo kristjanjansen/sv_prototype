@@ -4,13 +4,25 @@
 
 {{#each data.filters.fields}}
 
+{{#compare this.type 'radios'}}
+<div class="btn-group" data-toggle="buttons">
+{{#each this.options}}
+  <label class="btn btn-default btn-sm {{#if @first}}active{{/if}}">
+    <input type="radio" name="options" id="option1" autocomplete="off" {{#if @first}}checked{{/if}}> {{ this }}
+  </label>
+{{/each}}
+</div>
+{{/compare}}
+
+
 {{#compare this.type 'select'}}
 <select name="" id="input" class="form-control input-sm">
   {{#each this.options}}
-  <option value="">{{this}}</option>
+  <option value="">{{ this }}</option>
   {{/each}}
 </select>
 {{/compare}}
+
 
 {{#compare this.type 'text'}}
 <div class="form-group">
@@ -27,7 +39,12 @@
   </button>
   <ul class="dropdown-menu">
   {{#each data.filters.menu}}
-    <li><a href="">{{ this }}</a></li>
+  {{#compare this '!=' '--'}}
+  <li><a href="">{{ this }}</a></li>
+  {{/compare}}
+  {{#compare this '--'}}
+  <li class="divider"></li>
+  {{/compare}}
   {{/each}}
   </ul>
 </div>

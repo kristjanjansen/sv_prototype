@@ -13,20 +13,24 @@ menu:
   - Seadistused
   - Välju
 filters:
-  radios:
-    - Minu tunnid
-    - Kõik
-  select:
-    -
-      - Multimeedia kujundajad
-      - Teabegraafikud
-  text:
-    - First
-    - Second
+  fields:
+    - type: radios
+      options:
+        - Minu tunnid
+        - Kõik
+    - type: select
+      options:
+        - Multimeedia kujundajad
+        - Teabegraafikud
+    - type: text
+      label: First
+    - type: text
+      label: Second
   title: Filtreeri
   menu:
     - Laiendatud filter...
     - Jäta filter meelde
+    - --
     - Puhasta filter
 actions_top:
   primary:
