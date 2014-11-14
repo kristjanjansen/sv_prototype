@@ -1,10 +1,16 @@
 body {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 .btn-link.btn-danger {
   color: red;
 }
-
+.container {
+    height:100%;
+}
+.sidebar, .main {
+    height:100%;
+    min-height:100%;
+}
 
 .modal-dialog {
   width: 100%;

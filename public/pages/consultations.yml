@@ -9,11 +9,21 @@ navbar:
       - Välju
 sidebar:
   menu:
-    - label: Konsultatsioonid
-      url: ?page=consultations
-      active: true
-    - label: Äraolekud
-      url: ?page=leavings
+    primary:
+      - label: Konsultatsioonid
+        url: ?page=consultations
+        active: true
+      - label: Äraolekud
+        url: ?page=leavings
+    secondary:
+      - label: Sinine (default)
+        url: ?page=consultations&theme=blue
+      - label: Oranž
+        url: ?page=consultations&theme=orange
+      - label: Roheline
+        url: ?page=consultations&theme=green
+      - label: Tumehall
+        url: ?page=consultations&theme=gray
 config:
 help: true
 alert: 

@@ -1,7 +1,7 @@
 $icon-font-path: "../vendor/bootstrap/fonts/";
 
-$padding-base-vertical:          5px !default;
-$padding-base-horizontal:        10px !default;
+$padding-base-vertical:          3px !default;
+$padding-base-horizontal:        8px !default;
 $padding-large-vertical:         10px !default;
 $padding-large-horizontal:       16px !default;
 $padding-small-vertical:         4px !default;
@@ -22,13 +22,15 @@ $table-condensed-cell-padding:   3px !default;
 
 $alert-padding:                 10px !default;
 
-
 $navbar-inverse-color:           lighten($brand-primary, 70%) !default;
 $navbar-inverse-link-color:      $navbar-inverse-color;
 $navbar-inverse-bg:              darken($brand-primary, 10%) !default;
 
-$border-radius-base:        2px !default;
-$border-radius-large:       3px !default;
-$border-radius-small:       2px !default;
+$border-radius-base:              2px !default;
+$border-radius-large:             3px !default;
+$border-radius-small:             1px !default;
+
+$input-border-radius:             1px !default;
 
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+

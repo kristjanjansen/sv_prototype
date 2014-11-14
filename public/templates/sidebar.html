@@ -1,5 +1,13 @@
-<ul class="nav nav-sidebar">
-{{#each data.sidebar.menu}}
+<ul class="nav nav-sidebar menu-primary">
+{{#each data.sidebar.menu.primary}}
+  <li {{#if this.active}}class="active"{{/if}}><a href="{{ this.url }}"><h4>{{ this.label }}</h4></a></li>
+{{/each}}
+  <li class="separator"></li>
+</ul>
+
+<ul class="nav nav-sidebar menu-secondary">
+{{#each data.sidebar.menu.secondary}}
   <li {{#if this.active}}class="active"{{/if}}><a href="{{ this.url }}">{{ this.label }}</a></li>
+  <li class="separator"></li>
 {{/each}}
 </ul>
