@@ -78,7 +78,7 @@ $.get('./pages/' + page + '.yml', function(data) {
 
     $("table").tablesorter();
 
-       $('.modal').modal('toggle')
+   //    $('.modal').modal('toggle')
 
     $('.table-actions .btn, .modal .btn, .btn-primary').on('click', function(e) {
 

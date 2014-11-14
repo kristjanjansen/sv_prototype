@@ -2,27 +2,22 @@
 
 <form class="form-inline">
 
-<div class="btn-group" data-toggle="buttons">
+{{#each data.filters.fields}}
 
-{{#each data.filters.radios}}
-  <label class="btn btn-default btn-sm {{#if @first}}active{{/if}}">
-    <input type="radio" name="options" id="option1" autocomplete="off" {{#if @first}}checked{{/if}}> {{this}}
-  </label>
-{{/each}}
-</div>
-
-{{#each data.filters.select}}
+{{#compare this.type 'select'}}
 <select name="" id="input" class="form-control input-sm">
-  {{#each this}}
+  {{#each this.options}}
   <option value="">{{this}}</option>
   {{/each}}
 </select>
-{{/each}}
+{{/compare}}
 
-{{#each data.filters.text}}
-  <div class="form-group">
-    <input type="text" class="form-control input-sm" id="" placeholder="{{.}}">
-  </div>
+{{#compare this.type 'text'}}
+<div class="form-group">
+  <input type="text" class="form-control input-sm" id="" placeholder="{{ this.label }}">
+</div>
+{{/compare}}
+
 {{/each}}
 
 <div class="btn-group">
