@@ -66,6 +66,7 @@ table:
       - Kuressaare
       - Esitatud kinnitamiseks
   actions:
+      - Muuda
 modal:
   title: Lisa äraolek
   form:

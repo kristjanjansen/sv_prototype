@@ -38,7 +38,7 @@ tplKeys.forEach(function(key) {
 
 $.ajaxSetup({async: true})
 
-var page = (urlParameter('page') || 'default')
+var page = (urlParameter('page') || 'consultations')
 
 $.get('./pages/' + page + '.yml', function(data) {
  

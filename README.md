@@ -10,7 +10,7 @@ on jälgitav **/public/js/app.js** failist.
 **/public/pages**
 
 Lehekülgede struktuurifailid [YAML](http://www.yaml.org/spec/1.2/spec.html) formaadis, mille alusel genereeritakse templatede abil HTML fail. Valitavad URL ribalt **?theme=insert-pagename-here** parameetriga. Kui parameetrit pole,
-kasutatakse **/public/pages/front.yml** faili.
+kasutatakse **/public/pages/consultations.yml** faili.
 
 Leheküljefaile saab ise juurde teha ja URL parameetriga katsetada.
 

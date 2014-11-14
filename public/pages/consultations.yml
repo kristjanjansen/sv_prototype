@@ -70,6 +70,7 @@ table:
       - 11:45-12:25
       - Upa õppehoone - U206 (Õppeklass)
   actions:
+      - Muuda
 modal:
   title: Lisa konsultatsioon
   form:
@@ -122,8 +123,6 @@ modal:
     actions:
   actions_bottom:
     primary:
-      - Salvesta ja esita
-    secondary:
       - Salvesta
     danger:
       - Kustuta (tekib muutmisel)
