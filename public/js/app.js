@@ -9,20 +9,19 @@ $('.theme-css').attr('href', './themes/' + css + '.css')
 $.ajaxSetup({async: false, cache: false})
 
 var tplKeys = [
-    'wrapper',
-    'nav',
+    'body',
+    'navbar',
     'sidebar',
     'main',
-    'filters',
-    'actions_top',
-    'actions',
-    'table',
-    'modal',
-    'exports',
     'alert',
-    'table_actions',
+    'filters',
+    'exports',
     'config',
-    'form'
+    'actions',
+    'form',
+    'table',
+    'table_actions',
+    'modal',
 ]
 
 var tpl = {}
@@ -46,8 +45,8 @@ $.get('./pages/' + page + '.yml', function(data) {
 
     // Generate the HTML based on templates
 
-    $('body').html(tpl.wrapper({
-      nav: tpl.nav({data: data}),
+    $('body').html(tpl.body({
+      navbar: tpl.navbar({data: data}),
       sidebar: tpl.sidebar({data: data}),
       main: tpl.main({
         data: data,

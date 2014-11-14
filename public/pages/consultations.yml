@@ -7,6 +7,13 @@ navbar:
       - Seadistused
       - --
       - Välju
+sidebar:
+  menu:
+    - label: Konsultatsioonid
+      url: ?page=consultations
+      active: true
+    - label: Äraolekud
+      url: ?page=leavings
 config:
 help: true
 alert: 

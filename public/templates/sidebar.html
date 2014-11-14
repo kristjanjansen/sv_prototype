@@ -1,5 +1,5 @@
 <ul class="nav nav-sidebar">
-{{#each data.menu}}
-  <li><a href="#">{{ this }}</a></li>
+{{#each data.sidebar.menu}}
+  <li {{#if this.active}}class="active"{{/if}}><a href="{{ this.url }}">{{ this.label }}</a></li>
 {{/each}}
 </ul>
