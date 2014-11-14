@@ -42,8 +42,6 @@ $navbar-inverse-color:            lighten($brand-primary, 70%) !default;
 $navbar-inverse-link-color:       $navbar-inverse-color;
 $navbar-inverse-bg:               darken($brand-primary, 10%) !default;
 
-$btn-default-bg:                  lighten($brand-primary, 50%) !default;
-
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";
 
 hr {

@@ -17,7 +17,7 @@ sidebar:
       - label: Äraolekud
         url: ?page=leavings
     secondary:
-      - label: Sinine (default)
+      - label: Sinine
         url: ?page=consultations&theme=blue
       - label: Oranž
         url: ?page=consultations&theme=orange
@@ -26,7 +26,10 @@ sidebar:
       - label: Tumehall
         url: ?page=consultations&theme=gray
 tabs:
-  - Olla
+  - Konsultatsioonid
+  - Tunniplaan
+  - Päevik
+  - Töökava
 alert: false
 exports:
   - PDF

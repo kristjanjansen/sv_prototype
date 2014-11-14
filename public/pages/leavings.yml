@@ -19,7 +19,7 @@ sidebar:
       - label: Äraolekud
         url: ?page=leavings
     secondary:
-      - label: Sinine (default)
+      - label: Sinine
         url: ?page=leavings&theme=blue
       - label: Oranž
         url: ?page=leavings&theme=orange
@@ -27,6 +27,9 @@ sidebar:
         url: ?page=leavings&theme=green
       - label: Tumehall
         url: ?page=leavings&theme=gray
+tabs:
+  - Äraolekud
+  - Lähetused
 alert: false
 exports:
 help: false

@@ -2378,19 +2378,19 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 
 .btn-default {
   color: #333;
-  background-color: #bff6f3;
+  background-color: #ecfcfb;
   border-color: #ccc; }
   .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
     color: #333;
-    background-color: #92f0eb;
+    background-color: #bff6f3;
     border-color: #adadad; }
   .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
     background-image: none; }
   .btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
-    background-color: #bff6f3;
+    background-color: #ecfcfb;
     border-color: #ccc; }
   .btn-default .badge {
-    color: #bff6f3;
+    color: #ecfcfb;
     background-color: #333; }
 
 .btn-primary {

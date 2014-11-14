@@ -1,3 +1,4 @@
 $brand-primary:                  #16a099;
+$btn-default-bg:                 lighten($brand-primary, 60%) !default;
 
 @import "default.scss";
