@@ -14,7 +14,7 @@ menu:
   - Välju
 filters:
   fields:
-    - type: radios
+    - type: radio
       options:
         - Minu tunnid
         - Kõik

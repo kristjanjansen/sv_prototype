@@ -1,46 +1,129 @@
+title: Õppetöö › Konsultatsioonid
 navbar:
   title: Kuressaare Ametikool
-  user: Janno Kohver
-  menu:
-    - Õpilase vaade
-    - Õpetaja vaade
-    - Seadistused
-    - Logi välja
-config: true
+  user:
+    name: Timmo Kellas
+    menu:
+      - Seadistused
+      - --
+      - Välju
+config:
 help: true
-title: Päevik
-alert: It's okay!
+alert: 
 exports:
   - PDF
-  - Excel
-menu:
-  - Kasutaja
-  - Seadistused
-  - Välju
+filters:
+  fields:
+    - type: select
+      options:
+        - 2014/2015
+        - 2013/2014
+        - 2012/2013
+        - 2011/2012
+        - jne
+    - type: select
+      options:
+        - 1. periood
+        - 2. periood
+        - 3. periood
+        - 4. periood
+        - jne
+    - type: text
+      label: Nimi
+  title: Filtreeri
+  menu:
+    - Jäta filter meelde
+    - --
+    - Puhasta filter
 actions_top:
-  secondary:
-    - Add
-actions_bottom:
   primary:
-    - Save
-  secondary:
-    - Share
-    - Assign
-  danger:
-    - Delete
+    - Lisa
+actions_bottom:
 table:
   headers:
-    - Name
-    - Group
-    - Grade
+    - Õpetaja
+    - Õppeaine
+    - Tegevus
+    - Päev
+    - Aeg
+    - Ruum
   rows:
     - 
-      - 1
-      - 2
-      - 3
+      - Viirpuu, Silja
+      - 'Inglise keel: Palun registreeruda siseveebis hiljemalt 18.nov.12:00'
+      - Järelvastamine
+      - T 18.11
+      - 16:05-17:05
+      - Õppehoone - Õ207 (Õppeklass (majutusteenindus))
     - 
-      - a
-      - b
-      - c
+      - Sammelselg, Ants
+      - Kõik läbitud õppeained
+      - Järelvastamine
+      - T 11.11
+      - 16:15-16:50
+      - Õppehoone - Õ303 (Õppeklass)
+    - 
+      - Armand, Olev
+      - Ajalugu
+      - Järelvastamine
+      - N 13.11
+      - 11:45-12:25
+      - Upa õppehoone - U206 (Õppeklass)
   actions:
-    - Edit
+modal:
+  title: Lisa konsultatsioon
+  form:
+    fields:
+      - type: static
+        label: Õpetaja
+        text: Kristjan Jansen
+      - type: radio
+        label: Perioodi määramine
+        options:
+          - Õppeperiood
+          - Kuupäevade vahemik
+          - Kuupäev
+      - type: select
+        label: Õppeaasta
+        options:
+          - 2014/2015
+          - 2013/2014
+          - 2012/2013
+          - 2011/2012
+          - jne
+      - type: text
+        label: Õppeaine/teema
+      - type: radio
+        label: Tegevus
+        options:
+          - Konsultatsioon
+          - Järelevastamine
+      - type: checkbox
+        label: Päev
+        options:
+          - E
+          - T
+          - K
+          - N
+          - R
+          - L
+          - P
+      - type: static
+        label: Aeg
+        text: (inline ajavälju veel ei ole)
+      - type: select
+        label: Ruum
+        options:
+          - 'PH: 101 - Arendus-turundus'
+          - jne
+      - type: textarea
+        label: Lisainfo
+  table:
+    actions:
+  actions_bottom:
+    primary:
+      - Salvesta ja esita
+    secondary:
+      - Salvesta
+    danger:
+      - Kustuta (tekib muutmisel)

@@ -4,7 +4,7 @@
 
 {{#each data.filters.fields}}
 
-{{#compare this.type 'radios'}}
+{{#compare this.type 'radio'}}
 <div class="btn-group" data-toggle="buttons">
 {{#each this.options}}
   <label class="btn btn-default btn-sm {{#if @first}}active{{/if}}">

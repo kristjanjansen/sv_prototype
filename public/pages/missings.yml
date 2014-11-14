@@ -1,0 +1,87 @@
+title: Personal › Äraolekud
+navbar:
+  title: Kuressaare Ametikool
+  user:
+    name: Mati Mäetalu
+    menu:
+      - Kasuta õpetajana
+      - Kasuta õpilasena
+      - --
+      - Seadistused
+      - --
+      - Välju
+config:
+help:
+alert: 
+exports:
+filters:
+  fields:
+    - type: select
+      options:
+        - 2011
+        - 2012
+        - 2013
+        - 2014
+        - 2015
+        - 2016
+    - type: text
+      label: Nimi
+  title: Filtreeri
+  menu:
+    - Jäta filter meelde
+    - --
+    - Puhasta filter
+actions_top:
+  primary:
+    - Lisa
+actions_bottom:
+table:
+  headers:
+    - Töötaja
+    - Ametinimetus
+    - Periood
+    - Põhjus
+    - Asukoht
+    - Seis
+  rows:
+    - 
+      - Viirpuu, Silja
+      - kutseõpetaja
+      - 22.12.2014
+      - Valla vastuvõtt
+      - Nasva
+      - Kinnitatud
+    - 
+      - Sammelselg, Ants
+      - kutseõpetaja
+      - 21.11.2014
+      - Väärtuskasvatus
+      - Haapsalu
+      - Kinnitatud
+    - 
+      - Armand, Olev
+      - kutseõpetaja
+      - 1.12.2014
+      - Volikogu istung
+      - Kuressaare
+      - Esitatud kinnitamiseks
+  actions:
+modal:
+  title: Lisa äraolek
+  form:
+    fields:
+      - type: textarea
+        label: Põhjus
+      - type: text
+        label: Asukoht
+      - type: textarea
+        label: Lisainfo
+  table:
+    actions:
+  actions_bottom:
+    primary:
+      - Salvesta ja esita
+    secondary:
+      - Salvesta
+    danger:
+      - Kustuta (tekib muutmisel)
