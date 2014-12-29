@@ -10,6 +10,7 @@ body {
 .navbar .badge {
   background-color: red;
 }
+
 .sidebar {
   padding-top: 15px;
 }
@@ -40,12 +41,17 @@ body {
   overflow: auto;
 }
 
-.modal.fade .modal-dialog {
-  left: 100%;
-  transition: opacity 1s linear, left 0.1s ease-out;
-}
+// Sidebar menu
 
-.modal.fade.in .modal-dialog {
-  left: 100px;
-}​
+.sidebar ul {
+  list-style-type: none !important;
+  margin: 0;
+  padding: 0;
+}
+.sidebar > ul ul {
+  padding: 0;
+}
+.sidebar > ul ul ul {
+  padding: 0 0 0 10px;
+}
 

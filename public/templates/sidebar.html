@@ -1,5 +1,62 @@
 <div class="sidebar">
 
+
+<ul>
+
+{{#each data.sidebar.menu }}
+
+<li><label class="tree-toggler">{{ header }}</label>
+
+  <ul class="tree" {{#if closed}}style="display: none;"{{/if}}>
+
+  {{#each items }}
+
+    {{#if header }}
+    <li><label class="tree-toggler">{{ header }}</label>
+      <ul class="tree" {{#if closed}}style="display: none;"{{/if}}>
+        {{#each items }}
+
+          {{#if header }}
+          <li><label class="tree-toggler ">{{ header }}</label>
+            <ul class="tree" {{#if closed}}style="display: none;"{{/if}}>
+              {{#each items }}
+              <li><a href="{{ url }}">{{ title }}</a></li>
+              {{/each}}
+            </ul>
+          </li>
+          {{else}}
+            <li><a href="{{ url }}">{{ title }}</a></li>
+          {{/if}}
+
+
+        {{/each}}
+      </ul>
+    </li>
+    {{else}}
+      <li><a href="{{ url }}">{{ title }}</a></li>
+    {{/if}}
+
+  {{/each}}
+
+  </ul>
+
+
+</li>
+
+{{/each}}
+
+</ul>
+
+         
+
+
+
+
+</div>
+
+{{!--
+
+
 <ul class="nav nav-sidebar">
 {{#each data.sidebar.menu.primary}}
   <li {{#if this.active}}class="active"{{/if}}><a href="{{ this.url }}">{{ this.label }}</a></li>
@@ -15,3 +72,5 @@
 </ul>
 
 </div>
+
+--}}

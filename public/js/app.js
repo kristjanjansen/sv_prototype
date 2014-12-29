@@ -88,6 +88,12 @@ $.get('./pages/' + page + '.yml', function(data) {
 
     })
 
+  // Sidebar menu toggle
+
+  $('label.tree-toggler').click(function () {
+    $(this).parent().children('ul.tree').toggle('closed');
+  });
+
 
 })
 

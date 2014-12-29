@@ -10,21 +10,33 @@ navbar:
       - Välju
 sidebar:
   menu:
-    primary:
-      - label: Konsultatsioonid
-        url: ?page=consultations
-        active: true
-      - label: Äraolekud
-        url: ?page=leavings
-    secondary:
-      - label: Sinine
-        url: ?page=consultations&theme=blue
-      - label: Oranž
-        url: ?page=consultations&theme=orange
-      - label: Roheline
-        url: ?page=consultations&theme=green
-      - label: Tumehall
-        url: ?page=consultations&theme=gray
+    - header: Heading 1
+      closed: true
+      items:
+        - title: Item 1
+          url:
+        - title: Item 2
+          url:
+        - header: Heading 1.1
+          closed: true
+          items:
+            - title: Item 1
+              url:
+            - header: Heading 1.1.1
+              closed: true
+              items:
+                - title: Item 1
+                  url:
+                - title: Item 2
+                  url:
+            - title: Item 2
+              url:
+    - header: Heading 2
+      items:
+        - title: Item 1
+          url:
+        - title: Item 2
+          url:
 tabs:
   - Konsultatsioonid
   - Tunniplaan
